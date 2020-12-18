@@ -2,16 +2,16 @@ import { Conta } from "./Conta.js";
 
 
 
-export class ContaPoupanca extends Conta {
-    constructor(saldoInicial, agencia, cliente) {
-        super(saldoInicial, agencia, cliente);
+export class ContaSalario extends Conta {
+    constructor(agencia, cliente) {
+        super(0, agencia, cliente);
     }
 
 
 
        //Sobrescrevendo o comportamento de sacar da classe herdada.
        sacar(valor) {
-        const taxa = 1.02;
+        const taxa = 1.01;
         return this._sacar(valor, taxa);
     }
 }
