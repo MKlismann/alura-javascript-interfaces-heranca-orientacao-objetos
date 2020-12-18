@@ -5,12 +5,12 @@
             - Criaremos um sistema de contas correntes e cadastro de clientes para o cliente 'ByteBank'.
             - O sistema deve permitir a manipulação do saldo dos usuários e operações de transferências bancárias.
             - Além disto, incluiremos a funcionalidade de Conta Poupança e Conta Salário
-            - Toda conta deve teruma operação própria de saque, com sua taxa própria.
+            - Toda conta deve ter uma operação própria de saque, com sua taxa própria.
 */
 import {Cliente} from "./Cliente.js";
-import { ContaPoupanca } from "./ContaPoupanca.js";
-import { ContaCorrente } from "./ContaCorrente.js";
-import { ContaSalario } from "./ContaSalario.js";
+import { ContaPoupanca } from "./Conta/ContaPoupanca.js";
+import { ContaCorrente } from "./Conta/ContaCorrente.js";
+import { ContaSalario } from "./Conta/ContaSalario.js";
 
 
 
