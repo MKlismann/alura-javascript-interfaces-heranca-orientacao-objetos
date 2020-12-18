@@ -14,6 +14,7 @@ export class ContaCorrente extends Conta {
 
 
 
+    //Sobrescrevendo o comportamento de sacar da classe herdada.
     sacar(valor) {
         const taxa = 1.1;
         return this._sacar(valor, taxa);
