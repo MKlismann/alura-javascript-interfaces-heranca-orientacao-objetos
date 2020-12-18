@@ -6,17 +6,20 @@
             - O sistema deve permitir a manipulação do saldo dos usuários e operações de transferências bancárias.
             - Além disto, incluiremos a funcionalidade de Conta Poupança
 */
-
 import {Cliente} from "./Cliente.js";
-import { Conta } from "./Conta.js";
+import { ContaPoupanca } from "./ContaPoupanca.js";
+import { ContaCorrente } from "./ContaCorrente.js";
+
+
+
 
 const cliente1 = new Cliente("Fulano", 11122233344);
-
-const contaCorrenteCliente1 = new Conta(0, 1001, cliente1);
+const contaCorrenteCliente1 = new ContaCorrente(1001, cliente1);
 contaCorrenteCliente1.depositar(500);
 contaCorrenteCliente1.sacar(100);
 
-const contaPoupancaCliente1 = new Conta(0, 1001, cliente1);
+const contaPoupancaCliente1 = new ContaPoupanca(50, 1001, cliente1);
+contaPoupancaCliente1.sacar(10);
 
 console.log(contaPoupancaCliente1);
 console.log(contaCorrenteCliente1);
